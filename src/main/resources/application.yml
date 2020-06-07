@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: demo-mybatis12
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ssh
+    username: root
+    password: root123456
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package:
+  global-config:
+    id-type: 0
+    db-column-underline: true
+    logic-delete-value: 0
+    capital-mode: true
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+    jdbc-type-for-null: null
